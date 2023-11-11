@@ -68,4 +68,4 @@ public class Pessoa {
         System.out.println(pessoa.getPrint());
     }
 }
-//implementar classe Treino depois e fazer o GUI
+//implementar classe Treino depois, fazer o GUI
