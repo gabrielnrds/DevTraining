@@ -1,19 +1,20 @@
 package repositorio_academia;
 
-public class Aluno {
-
+public class Aluno extends Pessoa{
+	private int idade;
     private int matricula;
-    private int idade;
     private float peso;
     private float altura;
     private String treino;
+    protected boolean ativo;
 
-    public Aluno(int matricula, int idade, float peso, float altura, String treino){
+    public Aluno(String nome, String telefone, String email, String cpf, int idade, int matricula, float peso, float altura, String treino){
+    	super(nome, telefone, email, cpf, idade);
         this.matricula = matricula;
-        this.idade = idade;
         this.peso = peso;
         this.altura = altura;
         this.treino = treino;
+        this.ativo = true;
     }
 
     public void setMatricula(int matricula){

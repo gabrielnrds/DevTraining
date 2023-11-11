@@ -35,10 +35,11 @@ public class Academia {
 		//Esse método ira excluir um registro da classe aluno/professor.
 	}
 	
-	public boolean verificar() {
+	public boolean verificar(Aluno aluno) {
 		/*Aqui será feita a verificação do status de um objeto de tipo aluno/professor,
 		  tendo duas possibilidades: Ativo(True) ou Inativo(False). 
 		*/
+		return aluno.ativo;
 	}
 	
 }
