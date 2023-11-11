@@ -1,5 +1,6 @@
-import java.util.Scanner;
+package repositorio_academia;
 
+import java.util.Scanner;
 
 public class Professor extends Pessoa {
 	

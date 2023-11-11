@@ -1,3 +1,5 @@
+package repositorio_academia;
+
 public class Pessoa {
     private String nome;
     private String telefone;
