@@ -51,9 +51,6 @@ public class Aluno {
 
     public String getTreino() {
         return treino;
-    }
+                    }
+              }
 
-    // falta implementar esse metodo public void imprimiFicha(){
-
-    }
-}
