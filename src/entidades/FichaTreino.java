@@ -1,3 +1,5 @@
+package entidades;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -57,10 +59,9 @@ public class FichaTreino {
     }
 
     public static void main(String[] args) {
-        Professor professor = new Professor("WENDELL STRONDA",
-                30, 1, "Noite", 1320.5);
-        Cliente cliente = new Cliente("Cliente Teste", 25, 444444);
-        FichaTreino ficha = new FichaTreino(1, professor, cliente, new Date(), "Perna");
+    	Professor professor1 = new Professor("Wendell Stronda", "874243252", "wendell.stronda@email.com", "515141414", 21, 78, "manhã", 98);
+        Cliente cliente = new Cliente("Cliente Teste", "423423456", "cliente@email.com", "898444111-89", 97, "Rua robertinho", "treino", null, professor1, false);
+        FichaTreino ficha = new FichaTreino(1, professor1, cliente, new Date(), "Perna");
         ficha.adicionaExercicio("Agachamento");//aqui a gente adiciona
                                               // os exercicios na ficha de treino
         ficha.adicionaExercicio("EXTENSORA BRABISSIMA");//.

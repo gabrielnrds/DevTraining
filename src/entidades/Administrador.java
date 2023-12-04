@@ -1,3 +1,5 @@
+package entidades;
+
 import java.util.Map;
 
 public class Administrador extends Usuario {//tenho que mexer em muita coisa aqui ainda.

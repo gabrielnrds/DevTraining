@@ -1,6 +1,4 @@
-package repositorio_academia;
-
-import java.util.Scanner;
+package controle;
 
 public class RegistrarAvaliacao {
 	public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package entidades;
+
 public class Usuario {
 
     private int idUsuario;//ainda sem uso..

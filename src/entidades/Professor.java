@@ -1,3 +1,5 @@
+package entidades;
+
 import java.util.Scanner;
 
 
@@ -7,8 +9,8 @@ public class Professor extends Pessoa {
 	private String turno;
 	private double salario;
 
-	public Professor(String nome,int idade, int codigoDeFuncionario, String turno, Double salario) {
-		super();
+	public Professor(String nome, String telefone, String email, String cpf, int idade, int codigoDeFuncionario, String turno, double salario) {
+		super(nome, telefone, email, cpf, idade);
 		this.codigoDeFuncionario = codigoDeFuncionario;
 		this.turno = turno;
         this.salario = salario;
@@ -47,7 +49,7 @@ public class Professor extends Pessoa {
 	}
 	
 	public static void main(String[] args) {
-        Professor professor1 = new Professor("João Silva", 30, 1, "Manhã", 2000.0);
+        Professor professor1 = new Professor("Wendell Stronda", "874243252", "wendell.stronda@email.com", "515141414", 21, 78, "manhã", 98);
 
         // Criar treino
         professor1.criarTreino("Treino de Pernas");

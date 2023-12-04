@@ -1,4 +1,4 @@
-package repositorio_academia;
+package entidades;
 
 public class Medidas {
 	private Avaliacao avaliacao;
@@ -11,7 +11,6 @@ public class Medidas {
 	public Medidas(double altura, double peso, double braço_e, double braço_d, 
 				  double peitoral, double barriga, double quadril, double cocha_e, double cocha_d, 
 				  double panturrilha_e, double panturrilha_d) {
-		
 		setAltura(altura);
 		setPeso(peso);
 		setBraço_e(braço_e);

@@ -1,3 +1,5 @@
+package entidades;
+
 import java.util.Date;
 
 public class Cliente extends Pessoa {
@@ -6,18 +8,15 @@ public class Cliente extends Pessoa {
     private String treino;
     private Date dataMatricula;
     private Professor professor;
-    private String statusMatricula;
+    private boolean statusMatricula;
 //construtores
-    public Cliente(String nome, int idade, String endereco, String treino, Date dataMatricula, Professor professor, String statusMatricula) {
-        super();//chamamos a classe pessoa aqui
+    public Cliente(String nome, String telefone, String email, String cpf, int idade, String endereco, String treino, Date dataMatricula, Professor professor, Boolean statusMatricula) {
+        super(nome, telefone, email, cpf, idade);//chamamos a classe pessoa aqui
         this.endereco = endereco;
         this.treino = treino;
         this.dataMatricula = dataMatricula;
         this.professor = professor;
         this.statusMatricula = statusMatricula;
-    }
-
-    public Cliente(String clienteTeste, int idade, int i) {
     }
 
     public String getEndereco() {
@@ -51,27 +50,10 @@ public class Cliente extends Pessoa {
         this.professor = professor;
     }
 
-    public String getStatusMatricula() {
+    public Boolean getStatusMatricula() {
         return statusMatricula;
     }
-    public void setStatusMatricula(String statusMatricula) {
+    public void setStatusMatricula(Boolean statusMatricula) {
         this.statusMatricula = statusMatricula;
-    }
-
-    public static void main(String[] args) {
-        Professor professor = new Professor("teste", 20, 01,
-                "Tarde", 1000.0);
-
-        Cliente cliente = new Cliente("Cliente Teste", 25, "Rua UFRPE, 31231",
-                "Treino de Pernas",
-                new Date(), professor, "Ativa");
-
-        System.out.println("Nome: " + cliente.getNome());
-        System.out.println("Idade: " + cliente.getIdade());
-        System.out.println("Endereço: " + cliente.getEndereco());
-        System.out.println("Treino: " + cliente.getTreino());
-        System.out.println("Data de Matrícula: " + cliente.getDataMatricula());
-        System.out.println("Professor: " + cliente.getProfessor().getNome());
-        System.out.println("Status de Matrícula: " + cliente.getStatusMatricula());
     }
 }

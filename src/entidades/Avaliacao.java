@@ -1,4 +1,4 @@
-package repositorio_academia;
+package entidades;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

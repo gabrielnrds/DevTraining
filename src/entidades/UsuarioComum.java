@@ -1,3 +1,5 @@
+package entidades;
+
 public class UsuarioComum extends Usuario {
 
     private Cliente cliente;
