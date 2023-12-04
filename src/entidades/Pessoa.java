@@ -1,5 +1,3 @@
-package repositorio_academia;
-
 public class Pessoa {
     private String nome;
     private String telefone;
@@ -7,7 +5,7 @@ public class Pessoa {
     private String cpf;
     private int idade;
 
-    public Pessoa(String nome, String telefone, String email, String cpf, int idade) {
+    public Pessoa() {
         this.nome = nome;
         this.telefone = telefone;
         this.email = email;
@@ -55,7 +53,7 @@ public class Pessoa {
         this.idade = idade;
     }
 
-    public String getPrint() {
+    public String toString() {
         return "Nome: " + getNome() + "\n" +
                 "CPF: " + getCpf() + "\n" +
                 "E-mail: " + getEmail() + "\n" +
@@ -63,10 +61,10 @@ public class Pessoa {
     }
 
     public static void main(String[] args) {
-        Pessoa pessoa = new Pessoa("Wendell",
-                "81000000", "wendell@gmail.com",
-                "000.000.000.00", 20);
+        Pessoa pessoa = new Pessoa(
+        );
 
-        System.out.println(pessoa.getPrint());
+        System.out.println(pessoa);
     }
 }
+//implementar classe Treino depois, fazer o GUI
