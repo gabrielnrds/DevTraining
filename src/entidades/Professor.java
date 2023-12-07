@@ -59,4 +59,12 @@ public class Professor extends Pessoa {
         System.out.println("Idade: " + professor1.getIdade());
     }
 
+    public Object getId_professor() {
+        return null;
+    }
+
+    public Object getId_avaliacao() {
+        return null;
+    }
+
 }

@@ -25,4 +25,8 @@ public class Usuario {
         this.senha = novaSenha;
         System.out.println("Login alterado para: " + nomeUsuario);//coloquei, mas talvez seja inútil.3
     }
+
+    public Object getId_usuariosRepositorio() {
+        return null;
+    }
 }

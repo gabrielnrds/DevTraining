@@ -14,11 +14,11 @@ public class RepositorioTreinos {
 		this.FichaTreino[this.proxima] = c;
 		this.proxima = this.proxima + 1;
 	}
-    public void buscar(int FichaTreino) {
+    public void buscar(int id_treino) {
 		int i = 0;
 		boolean achou = false;
 		while ((!achou) && (i < this.proxima)) {
-			if (FichaTreino.equals(this.treino[i].getId())) {
+			if (id_treino.equals(this.clientesRepositorio[i].getId())) {
 				achou = true;
 			} else {
 				i = i + 1;
@@ -49,3 +49,5 @@ public class RepositorioTreinos {
 			System.out.println("Treino não existe.");
 		}
 }
+}
+//// FAlta implementar o método alterar, refazer lógica
