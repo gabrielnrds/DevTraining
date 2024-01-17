@@ -48,7 +48,7 @@ public class Professor extends Pessoa {
         scanner.close();
 	}
 	
-	public static void main(String[] args) {
+	public void print(String[] args) {
         Professor professor1 = new Professor("Wendell Stronda", "874243252", "wendell.stronda@email.com", "515141414", 21, 78, "manhã", 98);
 
         // Criar treino
