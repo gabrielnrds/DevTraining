@@ -6,6 +6,7 @@ import entidades.Usuario;
 public class RepositorioUsuarios {
     private Usuario[] usuariosRepositorio;
     private int proxima;
+	private Usuario[] usuarios;
 	public RepositorioUsuarios(int tamanho) {
 		this.usuarios = new Usuario[tamanho];
 		this.proxima = 0;

@@ -11,13 +11,13 @@ public class RepositorioProfessores {
 		this.proxima = 0;
 	}
 	
-	public void cadastrar(Usuario usuario) {
+	public void cadastrar(Professor usuario) {
 		this.professor[this.proxima] = usuario;
 		this.proxima = this.proxima + 1;
 	}
 	
 	
-	public Professor buscar(int idUsuario) {//talvez seja String e não do tipo int
+	public Professor buscar(String idUsuario) {
 		int i = 0;
 		boolean achou = false;
 		while ((!achou) && (i < this.proxima)) {
@@ -33,6 +33,9 @@ public class RepositorioProfessores {
 		}
 		return resultado;
 	}
+	/**
+	 * @param idUsuario
+	 */
 	public void remover(int idUsuario) {
 		int i = 0;
 		boolean achou = false;

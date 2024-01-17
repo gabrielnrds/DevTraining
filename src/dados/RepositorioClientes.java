@@ -1,5 +1,7 @@
 package dados;
 
+import entidades.Cliente;
+
 public class RepositorioClientes {
 	private Cliente[] clientes;
 	private int proxima;
@@ -17,7 +19,7 @@ public class RepositorioClientes {
 		int i = 0;
 		boolean achou = false;
 		while ((!achou) && (i < this.proxima)) {
-			if (num.equals(this.clientes[i].getId())) {
+			if (num.equals(this.clientes[i].getCpf())) {
 				achou = true;
 			} else {
 				i = i + 1;
@@ -33,7 +35,7 @@ public class RepositorioClientes {
 		int i = 0;
 		boolean achou = false;
 		while ((!achou) && (i < this.proxima)) {
-			if (num.equals(this.clientes[i].getId())) {
+			if (num.equals(this.clientes[i].getCpf())) {
 				achou = true;
 			} else {
 				i = i + 1;

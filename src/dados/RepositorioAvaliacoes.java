@@ -1,5 +1,7 @@
 package dados;
 
+import entidades.Avaliacao;
+
 public class RepositorioAvaliacoes {
 	private Avaliacao[] avaliacoes;
 	private int proxima;

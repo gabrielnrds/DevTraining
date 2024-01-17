@@ -17,7 +17,7 @@ public class RepositorioExercicios {
 		int i = 0;
 		boolean achou = false;
 		while ((!achou) && (i < this.proxima)) {
-			if (num.equals(this.exercicios[i].getCod())) {
+			if (num.equals(this.exercicios[i].getClass())) {
 				achou = true;
 			} else {
 				i = i + 1;
@@ -33,7 +33,7 @@ public class RepositorioExercicios {
 		int i = 0;
 		boolean achou = false;
 		while ((!achou) && (i < this.proxima)) {
-			if (num.equals(this.exercicios[i].getCod())) {
+			if (num.equals(this.exercicios[i].getClass())) {
 				achou = true;
 			} else {
 				i = i + 1;

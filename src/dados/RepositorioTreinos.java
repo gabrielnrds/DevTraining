@@ -4,8 +4,11 @@ import entidades.Cliente;
 import entidades.FichaTreino;
 
 public class RepositorioTreinos {
-    private Cliente[] clientesRepositorio;
+    private static final FichaTreino[] FichaTreino = null;
+	private Cliente[] clientesRepositorio;
     private int proximo;
+	private Cliente[] treino;
+	private Object proxima;
     public RepositorioTreinos(int tamanho){
         this.treino = new Cliente[tamanho];
         this.proximo = 0;
@@ -14,6 +17,9 @@ public class RepositorioTreinos {
 		this.FichaTreino[this.proxima] = c;
 		this.proxima = this.proxima + 1;
 	}
+    /**
+     * @param id_treino
+     */
     public void buscar(int id_treino) {
 		int i = 0;
 		boolean achou = false;
