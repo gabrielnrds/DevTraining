@@ -42,7 +42,7 @@ public class Professor extends Pessoa {
 
 	public void criarTreino(String treino) {
 		Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o treino: ");
+        System.out.print("Digite o treino: ");//Funcionará no GUI
         String treino1 = scanner.nextLine();
         System.out.println("Treino criado: " + treino1);
         scanner.close();
