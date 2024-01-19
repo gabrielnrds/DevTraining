@@ -39,8 +39,8 @@ public class RepositorioProfessores {
 	public void remover(String id_funcionario) 	 {
 		int i = 0;
 		boolean achou = false;
-		while ((!achou) && (i < this.proxima)) {
-			if (id_funcionario.equals(this.professor[i].getCodigoDeFuncionario())) {// mesmo problema do anterior
+		while ((!achou) && (i < this.proxima)) {// talvez devemos trocar o equal por ==
+			if (id_funcionario.equals(this.professor[i].getCodigoDeFuncionario())) {
 				achou = true;
 			} else {
 				i = i + 1;
@@ -64,7 +64,7 @@ public void alterar(String id_funcionario, Professor novoProfessor) {
 
     // Procura o professor com o ID fornecido
     while ((!achou) && (i < this.proxima)) {
-        if (id_funcionario.equals(this.professor[i].getCodigoDeFuncionario())) {
+        if (id_funcionario.equals(this.professor[i].getCodigoDeFuncionario())) {// talvez mudar o equals por ==
             achou = true;
         } else {
             i = i + 1;

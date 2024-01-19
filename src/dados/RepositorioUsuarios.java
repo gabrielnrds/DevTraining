@@ -1,27 +1,27 @@
 package dados;
 
-import entidades.Professor;
 import entidades.Usuario;
 
 public class RepositorioUsuarios {
     private Usuario[] usuariosRepositorio;
     private int proxima;
-	private Usuario[] usuarios;
 	public RepositorioUsuarios(int tamanho) {
-		this.usuarios = new Usuario[tamanho];
+		this.usuariosRepositorio = new Usuario[tamanho];
 		this.proxima = 0;
 	}
-	
+
+	//cadastrar
+
 	public void cadastrar(Usuario usuario) {
 		this.usuariosRepositorio[this.proxima] = usuario;
 		this.proxima = this.proxima + 1;
 	}
+	//buscar por idUsario
 	
-	
-	public Professor buscar(int idUsuario) {//talvez seja String e não do tipo int
+	public Usuario buscar(String idUsuario) {//talvez seja String e não do tipo int
 		int i = 0;
 		boolean achou = false;
-		while ((!achou) && (i < this.proxima)) {
+		while ((!achou) && (i < this.proxima)) {// talvez devemos trocar o equals por ==
 			if (idUsuario.equals(this.usuariosRepositorio[i].getId_usuariosRepositorio())) {
 				achou = true;
 			} else {
@@ -30,11 +30,14 @@ public class RepositorioUsuarios {
 		}
 		Usuario resultado = null;
 		if (i != this.proxima) {
-			resultado = this.usuarios[i];
+			resultado = this.usuariosRepositorio[i];
 		}
 		return resultado;
 	}
-	public void remover(int idUsuario) {
+
+
+	//remover
+	public void remover(String idUsuario) {
 		int i = 0;
 		boolean achou = false;
 		while ((!achou) && (i < this.proxima)) {
@@ -53,7 +56,31 @@ public class RepositorioUsuarios {
 			System.out.println("Avaliação não existe.");
 		}
 	}
+	//alterar
+	public void alterar(String idUsario, Usuario novoUsuario){
+		int i = 0;
+    boolean achou = false;
+
+    // Procura o professor com o ID fornecido
+    while ((!achou) && (i < this.proxima)) {
+        if (idUsario.equals(this.usuariosRepositorio[i].getId_usuariosRepositorio())) {
+            achou = true;
+        } else {
+            i = i + 1;
+        }
+    }
+
+    // Se encontrou o Usuário, realiza a alteração
+    if (achou) {
+        this.usuariosRepositorio[i] = novoUsuario;
+        System.out.println("Professor " + idUsario + " alterado com sucesso.");//remover mais tarde
+    } else {
+        System.out.println("Professor não encontrado.");//remover mais tarde
+	}
+
+	}
+
 }
-// FAlta implementar o método alterar
+
 
 
