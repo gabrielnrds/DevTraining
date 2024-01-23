@@ -1,7 +1,7 @@
 package dados;
 
 import entidades.Professor;
-import entidades.Usuario;
+
 
 public class RepositorioProfessores {
 	private Professor[] professor;
@@ -10,18 +10,19 @@ public class RepositorioProfessores {
 		this.professor = new Professor[tamanho];
 		this.proxima = 0;
 	}
-	
+	//Método para cadastrar 
 	public void cadastrar(Professor usuario) {
 		this.professor[this.proxima] = usuario;
-		this.proxima = this.proxima + 1;
+		this.proxima = this.proxima ++;
 	}
 	
-	
-	public Professor buscar(String idUsuario) {
+	//Método para buscar
+	public Professor buscar(String id_funcionario) {//talvez seja String e não do tipo int
 		int i = 0;
 		boolean achou = false;
 		while ((!achou) && (i < this.proxima)) {
-			if (idUsuario.equals(this.professor[i].getId_professor())) {
+			if (id_funcionario.equals(this.professor[i].getCodigoDeFuncionario())) // mesmo problema do anterior
+				{
 				achou = true;
 			} else {
 				i = i + 1;
@@ -33,14 +34,13 @@ public class RepositorioProfessores {
 		}
 		return resultado;
 	}
-	/**
-	 * @param idUsuario
-	 */
-	public void remover(int idUsuario) {
+	
+	//Método para remover
+	public void remover(String id_funcionario) 	 {
 		int i = 0;
 		boolean achou = false;
-		while ((!achou) && (i < this.proxima)) {
-			if (idUsuario.equals(this.professor[i].getId_professor())) {// mesmo problema do anterior
+		while ((!achou) && (i < this.proxima)) {// talvez devemos trocar o equal por ==
+			if (id_funcionario.equals(this.professor[i].getCodigoDeFuncionario())) {
 				achou = true;
 			} else {
 				i = i + 1;
@@ -50,10 +50,35 @@ public class RepositorioProfessores {
 			this.professor[i] = this.professor[this.proxima - 1];
 			this.professor[this.proxima - 1] = null;
 			this.proxima = this.proxima - 1;
-			System.out.println("Avaliação " + idUsuario + " removida com sucesso.");//editar
+			System.out.println("Avaliação " + id_funcionario + " removida com sucesso.");//retirar mais tarde
 		} else {
-			System.out.println("Avaliação não existe.");
+			System.out.println("Avaliação não existe.");//retirar mais tarde
 		}
 	}
+
+
+	// Método para alterar as informações de um professor
+public void alterar(String id_funcionario, Professor novoProfessor) {
+    int i = 0;
+    boolean achou = false;
+
+    // Procura o professor com o ID fornecido
+    while ((!achou) && (i < this.proxima)) {
+        if (id_funcionario.equals(this.professor[i].getCodigoDeFuncionario())) {// talvez mudar o equals por ==
+            achou = true;
+        } else {
+            i = i + 1;
+        }
+    }
+
+    // Se encontrou o professor, realiza a alteração
+    if (achou) {
+        this.professor[i] = novoProfessor;
+        System.out.println("Professor " + id_funcionario + " alterado com sucesso.");//remover mais tarde
+    } else {
+        System.out.println("Professor não encontrado.");//remover mais tarde
+    }
+ }
+
 }
-// FAlta implementar o método alterar
+// tem que mudar o getCodigoDeFuncionario por id_funcionario
