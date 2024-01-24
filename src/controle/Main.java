@@ -1,9 +1,9 @@
 package controle;
 
 import java.util.Scanner;
-import entidades.TreinoCostas;
-import entidades.TreinoPeito;
-import entidades.TreinoPerna;
+
+import entidades.FichaTreino;1
+
 
 public class Main {
     public static void main(String[] args) {
@@ -24,11 +24,11 @@ public class Main {
                 int tipoTreinoResposta = resposta.nextInt();
 
                 if (tipoTreinoResposta == 1) {
-                    TreinoPerna.executarTreino("Inferior");
+                    FichaTreino.executarTreinoInferior("Inferior");
                 } else if (tipoTreinoResposta == 2) {
-                    TreinoCostas.executarTreino("Costas");
+                    FichaTreino.executarTreinoCostas("Costas");
                 } else if (tipoTreinoResposta == 3) {
-                    TreinoPeito.executarTreino("Peito");
+                    FichaTreino.executarTreinoPeito("Peito");
                 } else {
                     System.out.println("Opção inválida!");
                 }
