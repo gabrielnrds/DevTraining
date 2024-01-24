@@ -2,7 +2,7 @@ package controle;
 
 import java.util.Scanner;
 
-import entidades.FichaTreino;1
+import entidades.FichaTreino;
 
 
 public class Main {
