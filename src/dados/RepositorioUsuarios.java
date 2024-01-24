@@ -19,10 +19,13 @@ public class RepositorioUsuarios {
 	//buscar por idUsario
 	
 	public Usuario buscar(String idUsuario) {//talvez seja String e não do tipo int
+		Integer idWrapper = Integer.valueOf(idUsuario);
+		
 		int i = 0;
 		boolean achou = false;
-		while ((!achou) && (i < this.proxima)) {// talvez devemos trocar o equals por ==
-			if (idUsuario.equals(this.usuariosRepositorio[i].getId_usuariosRepositorio())) {
+		while ((!achou) && (i < this.proxima)) {
+			Integer idUsuarioWrapper = this.usuariosRepositorio[i].getId_usuariosRepositorio();
+			if (idWrapper.equals(idUsuarioWrapper)) {
 				achou = true;
 			} else {
 				i = i + 1;
