@@ -50,8 +50,24 @@ public class RepositorioTreinos {
         }
     }
 
-    // Método alterar - Adicione a lógica necessária
     public void alterar(int idTreino, FichaTreino novaFichaTreino) {
-        // Implemente a lógica para alterar o treino com o ID fornecido
-    }
+		int indiceAlterar = -1;
+	
+		// Encontrar o índice da ficha de treino a ser alterada
+		for (int i = 0; i < this.proximo; i++) {
+			if (idTreino == this.fichasTreino[i].getIdTreino()) {
+				indiceAlterar = i;
+				break;
+			}
+		}
+	
+		if (indiceAlterar != -1) {
+			// Atualizar os dados da ficha de treino no índice encontrado
+			this.fichasTreino[indiceAlterar] = novaFichaTreino;
+			System.out.println("Ficha de treino alterada com sucesso.");
+		} else {
+			System.out.println("Ficha de treino não encontrada. Não foi possível realizar a alteração.");
+		}
+	}
+	
 }
