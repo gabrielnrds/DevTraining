@@ -9,7 +9,8 @@ public class Professor extends Pessoa {
 	private String turno;
 	private double salario;
 
-	public Professor(String nome, String telefone, String email, String cpf, int idade, int codigoDeFuncionario, String turno, double salario) {
+	public Professor(String nome, String telefone, String email,
+	 String cpf, int idade, int codigoDeFuncionario, String turno, double salario) {
 		super(nome, telefone, email, cpf, idade);
 		this.codigoDeFuncionario = codigoDeFuncionario;
 		this.turno = turno;
@@ -42,19 +43,21 @@ public class Professor extends Pessoa {
 
 	public void criarTreino(String treino) {
 		Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite o treino: ");
+        System.out.print("Digite o treino: ");//Funcionará no GUI
         String treino1 = scanner.nextLine();
         System.out.println("Treino criado: " + treino1);
         scanner.close();
 	}
 	
-	public static void main(String[] args) {
-        Professor professor1 = new Professor("Wendell Stronda", "874243252", "wendell.stronda@email.com", "515141414", 21, 78, "manhã", 98);
+	public void print(String[] args) {
+        Professor professor1 = new Professor("Wendell", "874243252", 
+		"wendell.silva@email.com", "515141414",
+		 21, 10, "manhã", 2.300);
 
-        // Criar treino
+        //criar treino
         professor1.criarTreino("Treino de Pernas");
 
-        // Acessar atributos herdados da classe Pessoa
+        // acessar atributos herdados da classe Pessoa
         System.out.println("Nome: " + professor1.getNome());
         System.out.println("Idade: " + professor1.getIdade());
     }

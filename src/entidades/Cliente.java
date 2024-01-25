@@ -10,7 +10,8 @@ public class Cliente extends Pessoa {
     private Professor professor;
     private boolean statusMatricula;
 //construtores
-    public Cliente(String nome, String telefone, String email, String cpf, int idade, String endereco, String treino, Date dataMatricula, Professor professor, Boolean statusMatricula) {
+    public Cliente(String nome, String telefone, String email, String cpf, int idade, 
+    String endereco, String treino, Date dataMatricula, Professor professor, Boolean statusMatricula) {
         super(nome, telefone, email, cpf, idade);//chamamos a classe pessoa aqui
         this.endereco = endereco;
         this.treino = treino;
