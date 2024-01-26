@@ -1,0 +1,79 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "demo.src.main.java.com.example.App",
+            "projectName": "DevTraining_84247cf5"
+        },
+        {
+            "type": "java",
+            "name": "Login",
+            "request": "launch",
+            "mainClass": "src.controle.Login",
+            "projectName": "DevTraining_84247cf5"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "src.controle.Main",
+            "projectName": "DevTraining_84247cf5"
+        },
+        {
+            "type": "java",
+            "name": "RegistrarAvaliacao",
+            "request": "launch",
+            "mainClass": "src.controle.RegistrarAvaliacao",
+            "projectName": "DevTraining_84247cf5"
+        },
+        {
+            "type": "java",
+            "name": "App(1)",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "DevTraining"
+        },
+        {
+            "type": "java",
+            "name": "Login(1)",
+            "request": "launch",
+            "mainClass": "controle.Login",
+            "projectName": "DevTraining"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "controle.Main",
+            "projectName": "DevTraining"
+        },
+        {
+            "type": "java",
+            "name": "RegistrarAvaliacao(1)",
+            "request": "launch",
+            "mainClass": "controle.RegistrarAvaliacao",
+            "projectName": "DevTraining"
+            
+        },
+        {
+            "type": "java",
+            "name": "App(2)",
+            "request": "launch",
+            "mainClass": "com.example/com.example.App",
+            "projectName": "demo"
+
+        }
+    ]
+}

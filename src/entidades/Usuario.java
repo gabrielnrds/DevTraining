@@ -8,7 +8,7 @@ public class Usuario {
     }
 
     public void login() {
-        
+    
     }
 
     public void deslogar() {
