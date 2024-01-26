@@ -72,7 +72,7 @@ public class PrimaryController implements Initializable {
     public static void exibirAlertaMensagem(String titulo, String mensagem) {
         Alert alerta = new Alert(Alert.AlertType.INFORMATION);
         alerta.setTitle(titulo);
-        alerta.setHeaderText(null); // Sem cabeçalho adicional
+        alerta.setHeaderText(null); //sem cabeçalho adicional
         alerta.setContentText(mensagem);
 
         alerta.showAndWait();

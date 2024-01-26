@@ -17,10 +17,6 @@ public class Login {
     public static void main(String[] args) {
         //exemplo
         Login login = new Login("usuario", "senha");
-
-        //verificação do usuário e senha
-        System.out.println("Login válido: " + login.verificarUsuario("usuario", "senha"));
-        System.out.println("Login inválido: " + login.verificarUsuario("usuario", "senha_incorreta"));
     }
     public String getUsuario() {
         return usuario;
