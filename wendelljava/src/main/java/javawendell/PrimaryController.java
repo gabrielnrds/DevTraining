@@ -50,7 +50,7 @@ public class PrimaryController implements Initializable {
             RepositorioClientes clientes = new RepositorioClientes(1000);
             Professor professor1 = new Professor("Wendell", "874243252",
                     "wendell.stronda@email.com", "1", 21, 78, "manhã", 98);
-            Cliente cliente = new Cliente("seabra", "423423456",
+            Cliente cliente = new Cliente("Wendell", "423423456",
                     "cliente@email.com", "898444111-89", 32, "Rua robertinho",
                     "treino", null, professor1, false);
             clientes.cadastrar(cliente);
