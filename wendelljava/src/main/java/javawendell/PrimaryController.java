@@ -32,12 +32,12 @@ public class PrimaryController implements Initializable {
         try {
             RepositorioClientes clientes = new RepositorioClientes(1000);
             Professor professor1 = new Professor("Wendell", "874243252",
-                    "wendell.stronda@email.com", "515141414", 21, 78, "manhã", 98);
+                    "wendell.stronda@email.com", "1", 21, 78, "manhã", 98);
             Cliente cliente = new Cliente("seabra", "423423456",
                     "cliente@email.com", "898444111-89", 32, "Rua robertinho",
                     "treino", null, professor1, false);
             clientes.cadastrar(cliente);
-            Login login1 = new Login(cliente.getNome(), "123");
+            Login login1 = new Login(cliente.getCpf(), "123");
             String login = Texto1.getText();// vou pegar informação q usuario digitar no txtfield
             String senha = TextoSenha.getText();// pega texto da senha0
             if (login.equals(login1.getUsuario())&& senha.equals(login1.getSenha())) {

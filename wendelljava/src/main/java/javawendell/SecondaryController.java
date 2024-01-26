@@ -11,6 +11,8 @@ public class SecondaryController {
 
     @FXML
     private Button BtnVoltarTela;
+    @FXML
+    private Button BtnRegistro;
 
     @FXML
     void VoltarTela(ActionEvent event) throws IOException {

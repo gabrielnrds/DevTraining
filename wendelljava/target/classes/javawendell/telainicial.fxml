@@ -6,7 +6,6 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javawendell.PrimaryController">
    <children>
       <ImageView fitHeight="620.0" fitWidth="985.0" layoutX="-1.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
@@ -15,7 +14,8 @@
          </image>
       </ImageView>
       <TextField fx:id="Texto1" layoutX="632.0" layoutY="216.0" prefHeight="26.0" prefWidth="259.0" />
-      <Button fx:id="BtnLogin" layoutX="683.0" layoutY="426.0" mnemonicParsing="false" onAction="#EntrarSegundaTela" prefHeight="42.0" prefWidth="125.0" style="-fx-background-color: transparent;" />
+      <Button fx:id="BtnLogin" layoutX="666.0" layoutY="368.0" mnemonicParsing="false" onAction="#EntrarSegundaTela" prefHeight="42.0" prefWidth="159.0" style="-fx-background-color: #4d6eab;" text="Entrar" />
       <TextField fx:id="TextoSenha" layoutX="632.0" layoutY="326.0" prefHeight="26.0" prefWidth="259.0" />
+      <Button fx:id="BtnRegistro" layoutX="668.0" layoutY="427.0" mnemonicParsing="false" onAction="#EntrarSegundaTela" prefHeight="42.0" prefWidth="159.0" style="-fx-background-color: #4d6eab;" text="Registrar" />
    </children>
 </AnchorPane>
