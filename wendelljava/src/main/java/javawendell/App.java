@@ -22,7 +22,7 @@ public class App extends Application {
         this.stage = stage;
         stage.setResizable(false);
         FXMLLoader root = new FXMLLoader(App.class.getResource("telainicial.fxml"));
-        Scene scene = new Scene(root.load(),stage.getMaxWidth(), stage.getHeight());
+        Scene scene = new Scene(root.load());
 
         stage.setScene(scene);
         stage.setTitle("DevTraining");
@@ -33,7 +33,7 @@ public class App extends Application {
 
 
     public static void trocartela(Parent janela) {
-        Scene scene = new Scene(janela, stage.getWidth(), stage.getHeight());
+        Scene scene = new Scene(janela);
         stage.setScene(scene);
     }
 
