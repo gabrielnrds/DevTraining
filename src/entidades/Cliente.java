@@ -1,32 +1,31 @@
 package entidades;
 
-import java.util.Date;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Objects;
 
 public class Cliente extends Pessoa {
-//atributos dos clientes
-    private String endereco;
+
+    
     private String treino;
-    private Date dataMatricula;
+    private LocalDate dataMatricula;
     private Professor professor;
     private boolean statusMatricula;
-//construtores
-    public Cliente(String nome, String telefone, String email, String cpf, int idade, String endereco, String treino, Date dataMatricula, Professor professor, Boolean statusMatricula) {
-        super(nome, telefone, email, cpf, idade);//chamamos a classe pessoa aqui
-        this.endereco = endereco;
+
+    public Cliente() {
+    	
+    }
+    
+    public Cliente(long id, String nome, String telefone, String email, String cpf, String endereco, int idade, 
+    		String treino, LocalDate dataMatricula, Professor professor, Boolean statusMatricula) {
+        super(id, nome, telefone, email, cpf, endereco, idade);
         this.treino = treino;
         this.dataMatricula = dataMatricula;
         this.professor = professor;
         this.statusMatricula = statusMatricula;
     }
 
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
-
+    
     public String getTreino() {
         return treino;
     }
@@ -35,16 +34,17 @@ public class Cliente extends Pessoa {
         this.treino = treino;
     }
 
-    public Date getDataMatricula() {//pegamos a data atual do procedimento feito com horário e tudo
-        return dataMatricula;
+    public String getDataMatricula() {
+    	DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        return dataMatricula.format(formatter);
     }
 
-    public void setDataMatricula(Date dataMatricula) {
+    public void setDataMatricula(LocalDate dataMatricula) {
         this.dataMatricula = dataMatricula;
     }
 
-    public Professor getProfessor() {
-        return professor;
+    public String getProfessor() {
+        return professor.getNome();
     }
     public void setProfessor(Professor professor) {
         this.professor = professor;
@@ -56,4 +56,33 @@ public class Cliente extends Pessoa {
     public void setStatusMatricula(Boolean statusMatricula) {
         this.statusMatricula = statusMatricula;
     }
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + Objects.hash(dataMatricula, professor, statusMatricula, treino);
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Cliente other = (Cliente) obj;
+		return Objects.equals(dataMatricula, other.dataMatricula) && Objects.equals(professor, other.professor)
+				&& statusMatricula == other.statusMatricula && Objects.equals(treino, other.treino);
+	}
+
+	@Override
+	public String toString() {
+		return "Cliente [treino=" + treino + ", dataMatricula=" + dataMatricula + ", professor=" + professor
+				+ ", statusMatricula=" + statusMatricula + "]";
+	}
+    
+    
 }

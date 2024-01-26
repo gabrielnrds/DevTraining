@@ -1,28 +1,24 @@
 package entidades;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 
 public class Professor extends Pessoa {
 	
-	private int codigoDeFuncionario;
 	private String turno;
 	private double salario;
 
-	public Professor(String nome, String telefone, String email, String cpf, int idade, int codigoDeFuncionario, String turno, double salario) {
-		super(nome, telefone, email, cpf, idade);
-		this.codigoDeFuncionario = codigoDeFuncionario;
+	public Professor() {
+		
+	}
+	
+	public Professor(long id, String nome, String telefone, String email, String cpf, String endereco, int idade, String turno, double salario) {
+		super(id, nome, telefone, email, cpf, endereco, idade);
 		this.turno = turno;
         this.salario = salario;
 	}
 	
-	public int getCodigoDeFuncionario() {
-		return codigoDeFuncionario;
-	}
-
-	public void setCodigoDeFuncionario(int codigoDeFuncionario) {
-		this.codigoDeFuncionario = codigoDeFuncionario;
-	}
 
 	public String getTurno() {
 		return turno;
@@ -39,6 +35,34 @@ public class Professor extends Pessoa {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
+	
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = super.hashCode();
+		result = prime * result + Objects.hash(salario, turno);
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (!super.equals(obj))
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Professor other = (Professor) obj;
+		return Double.doubleToLongBits(salario) == Double.doubleToLongBits(other.salario)
+				&& Objects.equals(turno, other.turno);
+	}
+
+	
+	@Override
+	public String toString() {
+		return "Professor [turno=" + turno + ", salario=" + salario + "]";
+	}
 
 	public void criarTreino(String treino) {
 		Scanner scanner = new Scanner(System.in);
@@ -47,24 +71,6 @@ public class Professor extends Pessoa {
         System.out.println("Treino criado: " + treino1);
         scanner.close();
 	}
+
 	
-	public static void main(String[] args) {
-        Professor professor1 = new Professor("Wendell Stronda", "874243252", "wendell.stronda@email.com", "515141414", 21, 78, "manhã", 98);
-
-        // Criar treino
-        professor1.criarTreino("Treino de Pernas");
-
-        // Acessar atributos herdados da classe Pessoa
-        System.out.println("Nome: " + professor1.getNome());
-        System.out.println("Idade: " + professor1.getIdade());
-    }
-
-    public Object getId_professor() {
-        return null;
-    }
-
-    public Object getId_avaliacao() {
-        return null;
-    }
-
 }
