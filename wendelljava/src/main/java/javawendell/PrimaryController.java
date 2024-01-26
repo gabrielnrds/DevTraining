@@ -10,22 +10,39 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 import primeiracamada.controle.Login;
 import primeiracamada.dados.RepositorioClientes;
 import primeiracamada.entidades.Cliente;
 import primeiracamada.entidades.Professor;
 
 public class PrimaryController implements Initializable {
-
     @FXML
     private Button BtnLogin;
+
+    @FXML
+    private Button BtnRegistro;
 
     @FXML
     private TextField Texto1;
 
     @FXML
-    private TextField TextoSenha;
+    private TextField TextoDEVTRAINING;
+
+    @FXML
+    private PasswordField TextoSenha;
+
+    @FXML
+    private AnchorPane imagemInicio;
+
+    @FXML
+    private Text textcpf;
+
+    @FXML
+    private Text textsenha;
 
     @FXML
     void EntrarSegundaTela(ActionEvent event) {
@@ -37,7 +54,7 @@ public class PrimaryController implements Initializable {
                     "cliente@email.com", "898444111-89", 32, "Rua robertinho",
                     "treino", null, professor1, false);
             clientes.cadastrar(cliente);
-            Login login1 = new Login(cliente.getCpf(), "123");
+            Login login1 = new Login(cliente.getNome(), "123");
             String login = Texto1.getText();// vou pegar informação q usuario digitar no txtfield
             String senha = TextoSenha.getText();// pega texto da senha0
             if (login.equals(login1.getUsuario())&& senha.equals(login1.getSenha())) {
