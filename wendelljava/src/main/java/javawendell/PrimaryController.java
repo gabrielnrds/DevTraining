@@ -57,6 +57,7 @@ public class PrimaryController implements Initializable {
             Login login1 = new Login(cliente.getNome(), "123");
             String login = Texto1.getText();// vou pegar informação q usuario digitar no txtfield
             String senha = TextoSenha.getText();// pega texto da senha0
+
             if (login.equals(login1.getUsuario())&& senha.equals(login1.getSenha())) {
                 App.trocartela(new FXMLLoader(App.class.getResource("segundatela.fxml")).load());
             } else {

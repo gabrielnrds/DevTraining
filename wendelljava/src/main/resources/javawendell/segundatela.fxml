@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javawendell.SecondaryController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="960.0" style="-fx-background-color: #4f4842;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javawendell.SecondaryController">
    <children>
-    <Button fx:id="BtnVoltarTela" layoutX="22.0" layoutY="548.0" mnemonicParsing="false" onAction="#VoltarTela" text="Voltar" />
-      <Button layoutX="129.0" layoutY="140.0" mnemonicParsing="false" prefHeight="144.0" prefWidth="160.0" style="-fx-background-color: #6080b3;">
-         <graphic>
-            <ImageView fitHeight="143.0" fitWidth="152.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../imagens/favicon.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
+    <Button fx:id="BtnVoltarTela" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" onAction="#VoltarTela" text="Voltar" />
    </children>
 </AnchorPane>
