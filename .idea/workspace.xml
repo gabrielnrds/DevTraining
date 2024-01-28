@@ -5,8 +5,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b7d11827-dee6-4ac5-8b84-90e822865972" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/controle/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/controle/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/controle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/controle/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/controle/RegistrarAvaliacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/controle/RegistrarAvaliacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/Exercicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/Exercicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/FichaTreino.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/FichaTreino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/RepositorioAvaliacoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/RepositorioAvaliacoes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/RepositorioClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/RepositorioClientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/RepositorioExercicios.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/RepositorioExercicios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/RepositorioProfessores.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/RepositorioProfessores.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/RepositorioTreinos.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/RepositorioTreinos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wendelljava/target/classes/primeiracamada/dados/RepositorioTreinos.class" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/target/classes/primeiracamada/dados/RepositorioTreinos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/RepositorioUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/dados/RepositorioUsuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Avaliacao.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Avaliacao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/FichaTreino.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/FichaTreino.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Medidas.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Medidas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Professor.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Professor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/java/primeiracamada/entidades/Usuario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/17764451-logotipo-universal-em-preto-e-branco-com-a-imagem-de-um-esportista-bom-para-academia-vetor-removebg-preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/17764451-logotipo-universal-em-preto-e-branco-com-a-imagem-de-um-esportista-bom-para-academia-vetor-removebg-preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/alongamento.png" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/alongamento.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/levantamento-peso.png" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/levantamento-peso.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/pilates.png" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/pilates.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/telalogin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/telalogin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/zumba.png" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/resources/imagens/zumba.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/resources/javawendell/segundatela.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/resources/javawendell/segundatela.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/resources/javawendell/telaPrincipal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/resources/javawendell/telaPrincipal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/resources/javawendell/telainicial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/src/main/resources/javawendell/telainicial.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/target/classes/imagens/17764451-logotipo-universal-em-preto-e-branco-com-a-imagem-de-um-esportista-bom-para-academia-vetor-removebg-preview.png" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/target/classes/imagens/17764451-logotipo-universal-em-preto-e-branco-com-a-imagem-de-um-esportista-bom-para-academia-vetor-removebg-preview.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/target/classes/imagens/alongamento.png" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/target/classes/imagens/alongamento.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/target/classes/imagens/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/target/classes/imagens/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/target/classes/imagens/levantamento-peso.png" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/target/classes/imagens/levantamento-peso.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/target/classes/imagens/pilates.png" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/target/classes/imagens/pilates.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/target/classes/imagens/telalogin.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/target/classes/imagens/telalogin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/target/classes/imagens/zumba.png" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/target/classes/imagens/zumba.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/target/classes/javawendell/segundatela.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/target/classes/javawendell/segundatela.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/target/classes/javawendell/telaPrincipal.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/target/classes/javawendell/telaPrincipal.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wendelljava/target/classes/javawendell/telainicial.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/wendelljava/target/classes/javawendell/telainicial.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,10 +60,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2bVBEdlc79Vey01OEQwXolt2ZTu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,7 +75,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "wendell9",
-    "last_opened_file_path": "C:/Users/wende/OneDrive/Documentos/GitHub/DevTraining/wendelljava",
+    "last_opened_file_path": "C:/Users/wende/OneDrive/Documentos/GitHub/DevTraining",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -42,6 +83,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\wende\OneDrive\Documentos\GitHub\DevTraining" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-21" />
@@ -67,6 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706290260664</updated>
       <workItem from="1706290264605" duration="360000" />
+      <workItem from="1706453497745" duration="90000" />
     </task>
     <servers />
   </component>
