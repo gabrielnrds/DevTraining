@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52272544-6ee6-4abd-8bc2-712edfb212bc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wendelljava/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/java/javawendell/PrimaryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wendelljava/src/main/resources/javawendell/telainicial.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wendelljava/target/classes/javawendell/PrimaryController.class" beforeDir="false" />
-    </list>
+    <list default="true" id="52272544-6ee6-4abd-8bc2-712edfb212bc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/wende/OneDrive/Documentos/GitHub/DevTraining",
+    "last_opened_file_path": "C:/Users/wende/OneDrive/Documentos/wendelljava",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,7 +67,7 @@
       <workItem from="1701619161152" duration="6000" />
       <workItem from="1701619235047" duration="5650000" />
       <workItem from="1701648297999" duration="34000" />
-      <workItem from="1706390002327" duration="1215000" />
+      <workItem from="1706390002327" duration="3588000" />
     </task>
     <servers />
   </component>
