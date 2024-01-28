@@ -69,5 +69,11 @@ public class Professor extends Pessoa {
     public Object getId_avaliacao() {
         return null;
     }
+//Adição do metodo toFormattedString
+	public String toFormattedString() {
+        return String.format("%d %s %s %s %s %d %d %s %.2f",
+                getCodigoDeFuncionario(), getNome(), getTelefone(), getEmail(), getCpf(),
+                getIdade(), getCodigoDeFuncionario(), getTurno(), getSalario());
+    }
 
 }
