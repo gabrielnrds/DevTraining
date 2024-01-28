@@ -17,6 +17,7 @@ import javafx.scene.text.Text;
 import primeiracamada.controle.Login;
 import primeiracamada.dados.RepositorioClientes;
 import primeiracamada.entidades.Cliente;
+import primeiracamada.entidades.Pessoa;
 import primeiracamada.entidades.Professor;
 
 public class PrimaryController implements Initializable {

@@ -1,108 +1,88 @@
 package primeiracamada.entidades;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Objects;
 
-abstract class Pessoa {
-    private long id;
-    private String nome;
-    private String telefone;
-    private String email;
-    private String cpf;
-    private String endereco;
-    private int idade;
+public class Cliente extends Pessoa {
 
-    public Pessoa() {}
 
-    public Pessoa(long id, String nome, String telefone, String email, String cpf, String endereco, int idade) {
-        this.id = id;
-        this.nome = nome;
-        this.telefone = telefone;
-        this.email = email;
-        this.cpf = cpf;
-        this.endereco = endereco;
-        this.idade = idade;
+    private String treino;
+    private LocalDate dataMatricula;
+    private Professor professor;
+    private boolean statusMatricula;
+
+    public Cliente(String clienteTeste, String number, String mail, String s, int i, String ruaRobertinho, String treino, Object o, Professor professor1, boolean b) {
+
     }
 
-    public long getId() {
-        return id;
+    public Cliente(long id, String nome, String telefone, String email, String cpf, String endereco, int idade,
+                   String treino, LocalDate dataMatricula, Professor professor, Boolean statusMatricula) {
+        super(id, nome, telefone, email, cpf, endereco, idade);
+        this.treino = treino;
+        this.dataMatricula = dataMatricula;
+        this.professor = professor;
+        this.statusMatricula = statusMatricula;
     }
 
-    public void setId(long id) {
-        this.id = id;
+
+    public String getTreino() {
+        return treino;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public void setTreino(String treino) {
+        this.treino = treino;
     }
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
-    public String getNome() {
-        return nome;
+    public String getDataMatricula() {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+        return dataMatricula.format(formatter);
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setDataMatricula(LocalDate dataMatricula) {
+        this.dataMatricula = dataMatricula;
     }
 
-    public String getTelefone() {
-        return telefone;
+    public String getProfessor() {
+        return professor.getNome();
+    }
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
     }
 
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public Boolean getStatusMatricula() {
+        return statusMatricula;
     }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
-    }
-
-    @Override
-    public String toString() {
-        return "Pessoa [id=" + id + ", nome=" + nome + ", telefone=" + telefone + ", email=" + email + ", cpf=" + cpf
-                + ", endereco=" + endereco + ", idade=" + idade + "]";
+    public void setStatusMatricula(Boolean statusMatricula) {
+        this.statusMatricula = statusMatricula;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(cpf, email, endereco, id, idade, nome, telefone);
+        final int prime = 31;
+        int result = super.hashCode();
+        result = prime * result + Objects.hash(dataMatricula, professor, statusMatricula, treino);
+        return result;
     }
 
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
-        if (obj == null)
+        if (!super.equals(obj))
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Pessoa other = (Pessoa) obj;
-        return Objects.equals(cpf, other.cpf) && Objects.equals(email, other.email)
-                && Objects.equals(endereco, other.endereco) && id == other.id && idade == other.idade
-                && Objects.equals(nome, other.nome) && Objects.equals(telefone, other.telefone);
+        Cliente other = (Cliente) obj;
+        return Objects.equals(dataMatricula, other.dataMatricula) && Objects.equals(professor, other.professor)
+                && statusMatricula == other.statusMatricula && Objects.equals(treino, other.treino);
     }
 
-    public String getCodigoDeFuncionario() {
+    @Override
+    public String toString() {
+        return "Cliente [treino=" + treino + ", dataMatricula=" + dataMatricula + ", professor=" + professor
+                + ", statusMatricula=" + statusMatricula + "]";
     }
+
+
 }
