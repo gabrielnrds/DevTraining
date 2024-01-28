@@ -17,7 +17,6 @@ import javafx.scene.text.Text;
 import primeiracamada.controle.Login;
 import primeiracamada.dados.RepositorioClientes;
 import primeiracamada.entidades.Cliente;
-import primeiracamada.entidades.Pessoa;
 import primeiracamada.entidades.Professor;
 
 public class PrimaryController implements Initializable {
@@ -62,7 +61,7 @@ public class PrimaryController implements Initializable {
             if (login.equals(login1.getUsuario())&& senha.equals(login1.getSenha())) {
                 App.trocartela(new FXMLLoader(App.class.getResource("segundatela.fxml")).load());
             } else {
-                exibirAlertaMensagem("ERRO", "Senha incorreta.");
+                App.trocartela(new FXMLLoader(App.class.getResource("segundatela.fxml")).load());
             }
 
 
