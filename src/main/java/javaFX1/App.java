@@ -10,7 +10,7 @@ import java.io.IOException;
 
 /**
  * JavaFX App
- */
+ */i
 public class App extends Application {
 
     public static Stage stage;
