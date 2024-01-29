@@ -1,6 +1,6 @@
-package dados;
+package main.java.primeiracamada.dados;
 
-import entidades.Professor;
+import main.java.primeiracamada.entidades.Professor;
 
 public class TesteRepositorioProfessores {
 

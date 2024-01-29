@@ -1,4 +1,4 @@
-package primeiracamada.controle;
+package main.java.primeiracamada.controle;
 
 public class Login {
 

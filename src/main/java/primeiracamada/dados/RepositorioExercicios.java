@@ -1,4 +1,4 @@
-package primeiracamada.dados;
+package main.java.primeiracamada.dados;
 
 public class RepositorioExercicios {
 	private Exercicio[] exercicios;

@@ -1,4 +1,4 @@
-package primeiracamada.entidades;
+package main.java.primeiracamada.entidades;
 
 public class Usuario {
 
@@ -8,16 +8,16 @@ public class Usuario {
     }
 
     public void login() {
-    
+        System.out.println("Usuário logado: " + nomeUsuario);//coloquei, mas talvez seja inútil.1
     }
 
     public void deslogar() {
-        
+        System.out.println("Usuário deslogado: " + nomeUsuario);//coloquei, mas talvez seja inútil.2
     }
 
     public void alterarLogin(String novoNomeUsuario, String novaSenha) {
         this.nomeUsuario = novoNomeUsuario;
-        
+        System.out.println("Login alterado para: " + nomeUsuario);//coloquei, mas talvez seja inútil.3
     }
 
     public Object getId_usuariosRepositorio() {

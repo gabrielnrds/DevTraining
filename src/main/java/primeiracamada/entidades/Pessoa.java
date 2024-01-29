@@ -1,21 +1,21 @@
-package primeiracamada.entidades;
+package main.java.primeiracamada.entidades;
 
 import java.util.Objects;
 
-public class Pessoa {
+public abstract class Pessoa {
     private long id;
-    private String nome;
+	private String nome;
     private String telefone;
     private String email;
     private String cpf;
     private String endereco;
-    private int idade;
-
+	private int idade;
+    
     public Pessoa() {}
 
     public Pessoa(long id, String nome, String telefone, String email, String cpf, String endereco, int idade) {
         this.id = id;
-        this.nome = nome;
+    	this.nome = nome;
         this.telefone = telefone;
         this.email = email;
         this.cpf = cpf;
@@ -24,20 +24,20 @@ public class Pessoa {
     }
 
     public long getId() {
-        return id;
-    }
+		return id;
+	}
 
-    public void setId(long id) {
-        this.id = id;
-    }
+	public void setId(long id) {
+		this.id = id;
+	}
 
-    public String getEndereco() {
-        return endereco;
-    }
+	public String getEndereco() {
+		return endereco;
+	}
 
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
+	}
     public String getNome() {
         return nome;
     }
@@ -79,31 +79,31 @@ public class Pessoa {
     }
 
     @Override
-    public String toString() {
-        return "Pessoa [id=" + id + ", nome=" + nome + ", telefone=" + telefone + ", email=" + email + ", cpf=" + cpf
-                + ", endereco=" + endereco + ", idade=" + idade + "]";
-    }
+	public String toString() {
+		return "Pessoa [id=" + id + ", nome=" + nome + ", telefone=" + telefone + ", email=" + email + ", cpf=" + cpf
+				+ ", endereco=" + endereco + ", idade=" + idade + "]";
+	}
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(cpf, email, endereco, id, idade, nome, telefone);
-    }
+	@Override
+	public int hashCode() {
+		return Objects.hash(cpf, email, endereco, id, idade, nome, telefone);
+	}
 
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Pessoa other = (Pessoa) obj;
-        return Objects.equals(cpf, other.cpf) && Objects.equals(email, other.email)
-                && Objects.equals(endereco, other.endereco) && id == other.id && idade == other.idade
-                && Objects.equals(nome, other.nome) && Objects.equals(telefone, other.telefone);
-    }
-
-    public String getCodigoDeFuncionario() {
-        return null;
-    }
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Pessoa other = (Pessoa) obj;
+		return Objects.equals(cpf, other.cpf) && Objects.equals(email, other.email)
+				&& Objects.equals(endereco, other.endereco) && id == other.id && idade == other.idade
+				&& Objects.equals(nome, other.nome) && Objects.equals(telefone, other.telefone);
+	}
 }
+
+
+
+

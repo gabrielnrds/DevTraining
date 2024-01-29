@@ -1,4 +1,4 @@
-package primeiracamada.entidades;
+package main.java.primeiracamada.entidades;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -98,4 +98,6 @@ public class FichaTreino  {
                 System.out.println("Tipo de Treino: " + ficha.getTipoTreino());
                 System.out.println("Exercícios:");
                 for (String exercicio : ficha.getExercicios()) {
-                        System.out.println(exercicio);
+                        System.out.println(exercicio);}
+                }
+            }

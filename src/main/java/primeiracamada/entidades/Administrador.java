@@ -1,4 +1,4 @@
-package primeiracamada.entidades;
+package main.java.primeiracamada.entidades;
 
 public class Administrador extends Usuario{
 

@@ -1,6 +1,6 @@
-package primeiracamada.dados;
+package main.java.primeiracamada.dados;
 
-import primeiracamada.entidades.Avaliacao;
+import main.java.primeiracamada.entidades.Avaliacao;
 
 public class RepositorioAvaliacoes {
 	private Avaliacao[] avaliacoes;
@@ -52,4 +52,3 @@ public class RepositorioAvaliacoes {
 	}
 
 }
-
