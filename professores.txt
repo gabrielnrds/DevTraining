@@ -1,1 +1,2 @@
-2 Maria 987654321 maria@email.com 987.654.321-01 35 2 Tarde 3500,00
+3 Carlos Atualizado 999888 carlos_atualizado@email.com 111.222.333-00 45 3 Noite 8000,00
+2 Maria 987654 maria@email.com 987.654.321-00 35 2 Tarde 6000,00
