@@ -1,4 +1,6 @@
-package javaFX1;
+package main.java.javaFX1;
+
+import java.io.IOException;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -6,11 +8,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 /**
  * JavaFX App
- */i
+ */
 public class App extends Application {
 
     public static Stage stage;

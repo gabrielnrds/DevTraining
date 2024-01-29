@@ -1,8 +1,10 @@
-package javaFX1;
+package main.java.javaFX1;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+
+import org.w3c.dom.Text;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,11 +15,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.text.Text;
-import primeiracamada.controle.Login;
-import primeiracamada.dados.RepositorioClientes;
-import primeiracamada.entidades.Cliente;
-import primeiracamada.entidades.Professor;
+import main.java.primeiracamada.controle.Login;
+import main.java.primeiracamada.dados.RepositorioClientes;
+import main.java.primeiracamada.entidades.Cliente;
+import main.java.primeiracamada.entidades.Professor;
 
 public class PrimaryController implements Initializable {
     @FXML

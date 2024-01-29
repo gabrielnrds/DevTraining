@@ -84,5 +84,10 @@ public class Cliente extends Pessoa {
 				+ ", statusMatricula=" + statusMatricula + "]";
 	}
     
+    public String toFormattedString() {
+        // Formate os atributos do cliente como desejar
+        return String.format("Nome: %s, CPF: %s, Treino: %s, Data de Matrícula: %s, Professor: %s, Status Matrícula: %s",
+                this.getNome(), this.getCpf(), this.getTreino(), this.getDataMatricula(), this.getProfessor(), this.getStatusMatricula());
+    }
     
 }
