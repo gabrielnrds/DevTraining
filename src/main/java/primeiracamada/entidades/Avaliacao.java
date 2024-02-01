@@ -115,4 +115,18 @@ public class Avaliacao {
 	public double getImc() {
 		return this.imc;
 	}
+
+	public String toFormattedString() {
+        StringBuilder formattedString = new StringBuilder();
+        
+        formattedString.append(id_avaliacao).append(";")
+                       .append(professor.getIdDoProfessor()).append(";")
+                       .append(cliente.getId()).append(";")
+                       .append(dataHora).append(";")
+                       .append(objetivo).append(";")
+                       .append(medidas.toFormattedString()).append(";")
+                       .append(imc);
+
+        return formattedString.toString();
+    }
 }

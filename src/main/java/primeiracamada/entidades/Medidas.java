@@ -138,4 +138,9 @@ public class Medidas {
 	public double getPanturrilha_d() {
 		return this.panturrilha_d;
 	}
+
+    public Object toFormattedString() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'toFormattedString'");
+    }
 }
